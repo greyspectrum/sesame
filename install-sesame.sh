@@ -7,7 +7,7 @@
 #
 # :author: greyspectrum
 # :date: 16 September 2016
-# :version: 0.1.0
+# :version: 0.9.1
 ##############################################################################
 
 chmod +x passphrase sesame.sh
@@ -22,8 +22,19 @@ mkdir password-vault
 
 touch password-vault/passwords.txt
 
+cd password-vault
+
 echo "Please enter a master passphrase to encrypt the password database: "
 read master_passphrase
+echo "$master_passphrase" > difile1.txt
+
+echo "Please enter the master passphrase again: "
+read master_passphrase
+echo "$master_passphrase" > difile2.txt
+
+if diff -q difile1.txt difile2.txt
+
+
 echo "MASTER PASSPHRASE: $master_passphrase" > passwords.txt
 
 cd password-vault
