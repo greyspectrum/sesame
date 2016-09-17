@@ -2,7 +2,7 @@
 
 ##############################################################################
 # install-sesame
-# -----------
+# --------------
 # The simple password manager.
 #
 # :author: greyspectrum
