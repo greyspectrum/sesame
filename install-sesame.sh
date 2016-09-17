@@ -7,7 +7,7 @@
 #
 # :author: greyspectrum
 # :date: 16 September 2016
-# :version: 0.1.0
+# :version: 0.9.1
 ##############################################################################
 
 chmod +x passphrase sesame.sh
@@ -45,5 +45,3 @@ echo "$master_passphrase"
 rm passwords.txt
 
 echo "INSTALLATION COMPLETE."
-
-cd
