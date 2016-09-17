@@ -32,8 +32,11 @@ echo "Please enter the master passphrase again: "
 read master_passphrase
 echo "$master_passphrase" > difile2.txt
 
-if diff -q difile1.txt difile2.txt
-
+if diff -q difile1.txt difile2.txt; then
+	echo "Passphrases match."
+else
+	echo "The passwords do not match. Please try again."
+fi
 
 echo "MASTER PASSPHRASE: $master_passphrase" > passwords.txt
 
