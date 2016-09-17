@@ -7,7 +7,7 @@
 #
 # :author: greyspectrum
 # :date: 16 September 2016
-# :version: 0.9.1
+# :version: 0.1.0
 ##############################################################################
 
 chmod +x passphrase sesame.sh
