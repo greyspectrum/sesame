@@ -26,17 +26,19 @@ cd password-vault
 
 echo "Please enter a master passphrase to encrypt the password database: "
 read master_passphrase
-echo "$master_passphrase" > difile1.txt
+echo "$master_passphrase" > diffile1.txt
 
 echo "Please enter the master passphrase again: "
 read master_passphrase
-echo "$master_passphrase" > difile2.txt
+echo "$master_passphrase" > diffile2.txt
 
-if diff -q difile1.txt difile2.txt; then
-	echo "Passphrases match."
-else
-	echo "The passwords do not match. Please try again."
-fi
+while ; do 
+	if diff -q diffile1.txt diffile2.txt; then
+		echo "Passphrases match."
+	else
+		echo "The passwords do not match. Please try again."
+	fi
+done
 
 echo "MASTER PASSPHRASE: $master_passphrase" > passwords.txt
 
