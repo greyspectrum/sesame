@@ -1,5 +1,8 @@
 # sesame
-The simple password manager.
+
+The simple password manager. 
+
+(I'm still putting this together, so don't try to use it yet.)
 
 ## Installation 
 
